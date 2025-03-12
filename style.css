@@ -1,0 +1,184 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the main content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #007BFF; /* Blue */
+    margin-bottom: 20px;
+}
+
+/* Search and Filter form styling */
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-bar, .filter-select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #81a3c9; /* Darker Blue */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF; /* Blue */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f0e2e2;
+}
+
+/* Action buttons (Mark Present/Absent) */
+a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: white;
+}
+
+a.call {
+    background-color: #007BFF; /* Blue */
+}
+
+a.sms {
+    background-color: #28A745; /* Green for SMS */
+}
+
+a.whatsapp {
+    background-color: #25D366; /* WhatsApp Green */
+}
+
+a.call:hover, a.sms:hover, a.whatsapp:hover {
+    opacity: 0.8;
+}
+
+/* Add Worker link */
+.add-worker {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Blue */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-worker:hover {
+    background-color: #0056b3; /* Darker Blue */
+}
+
+/* Action buttons for attendance (Mark Present / Absent) */
+.mark-attendance {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.mark-present {
+    background-color: #007BFF; /* Blue */
+}
+
+.mark-absent {
+    background-color: #FF5733; /* Red for Absent */
+}
+
+.mark-attendance:hover {
+    opacity: 0.8;
+}
+
+/* For the Add Worker page */
+form.add-worker-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form.add-worker-form input, form.add-worker-form select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form.add-worker-form input[type="submit"] {
+    background-color: #007BFF; /* Blue */
+    color: white;
+    cursor: pointer;
+}
+
+form.add-worker-form input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker Blue */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    table, th, td {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .search-bar, .filter-select, input[type="submit"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
